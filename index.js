@@ -3,7 +3,7 @@ const Chariot = require('chariot.js');
 class ChariotTemplate extends Chariot.Client {
   constructor() {
       super(new Chariot.Config(
-          'ODIyOTM3ODg0NTI4NjA3MjMz.YFZioQ.-LKcAUMuMIFWO0T1ChxQ6Obq9oc', 
+          process.env.BTOKEN, 
           {
               prefix: ['!ct', '@mention'],
               guildPrefixes: [
